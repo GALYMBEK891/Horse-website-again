@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Search</title>
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/darkmode.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+<body>
+    <div class="first-header">
+        <div>
+            <a href="#">
+                <img src="./logos/telegram_cloud_photo_size_4_5795060456526820895_w_removebg_preview.png" alt="" width="100px">
+            </a>
+            
+        </div>
+        <img src="./images/image.avif" alt="" width="90px">
+        <div class="time-info">
+            <div>YOUR TIME</div>
+        <div class="your-time" id="your-time"></div>
+        </div>
+    </div>
+
+    <div class="second-header">
+            <a href="./index.html" class="logo">
+                <img id="logo" src="./logos/at.png" alt="">
+                <h5>Kulager</h3>
+            </a>
+
+            <nav class="nav">
+                <a href="./about.html">Біз туралы</a>
+                <a href="./events.html">Eventтер</a>
+                <a href="./horsebreed.html">Ат Тұқымдары</a>
+                <a href="./results.html">Нәтижелер</a>
+                <a href="./search.html">Іздеу</a>
+            </nav>
+            
+
+
+        <div class="burger" id="burger">
+            <img id="burgerimage" src="./icons/text.png" alt="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+   
+    <div class="main-container">
+        <h1>Аттарды Іздеу</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a horse...">
+        </div>
+        <div class="container" id="horseContainer"></div>
+    
+
+
+                    <!-- footer -->
+                    <footer class="footer">
+                        <div class="footer-content">
+        
+                            <a href="./index.html">
+                                <img id="logo" src="./logos/at s.png" alt="" width="100">
+                            </a>
+                            
+                        </div>
+                        <div class="footer-content">
+        
+                            <h3>Сілтемелер</h3>
+        
+                            <a href="./index.html">Басты бет</a>
+                            <a href="./about.html">Біз туралы</a>
+                            <a href="./events.html">Eventтер</a>
+                            <a href="./search.html">Іздеу</a>
+                        </div>
+         
+                        <div class="footer-content">
+        
+                            <h3>Байланыс</h3>
+                            <p>Kazakhstan <br>
+                            Zhambyl obl.<br>
+                            Taraz, <br>
+                            Call: 8-776-195-8045<br>
+        
+                            <a href="mailto:galymbekmuratbai@gmail.com">galymbekmuratbai@gmail.com</a></p>
+        
+                            <div class="social-icons">
+                                
+                                <a href="https://wa.me/7761958045">
+                                    <img src="./icons/whatsapp.png" alt="WhatsApp">
+                                </a>
+                                
+                                <a href="https://www.instagram.com/galymbekmuratbai/">
+                                    <img src="./icons/instagram (1).png" alt="Instagram">
+                                </a>
+                                
+                                <a href="https://www.youtube.com/@GalymbekMuratbai">
+                                    <img src="./icons/youtube.png" alt="YouTube">
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </footer>
+    </div>
+
+     <!-- dark ko -->
+     <div class="dark-mode_container">
+        <img id="darkmode" src="./icons/night-mode.png" alt="">
+    </div>
+    <!-- chat ko -->
+    <div class="chat-icon" id="chat-icon">
+        <img id="chatimg" src="./icons/chat.png" alt="">
+    </div>
+    
+    <div class="ashyluganchat" id="ashyluganchat">
+        <div class="chat-header">
+            <img id="logo" src="./logos/at.png" alt="">
+            <h3>Kulager Team</h3>
+            
+        </div>
+    
+        <div class="chat-body">
+            <p>Хабарлама жіберіңіз. Біз сізге мүмкіндігінше тез жауап береміз!</p>
+
+        
+            <form id="forma">
+                <input type="text" placeholder="Атыңыз" name="name" required>
+                <input type="tel" placeholder="Телефон нөміріңіз" name="number" required>
+                <textarea placeholder="Хабарламаңызды енгізіңіз..." name="message" required></textarea>
+                <button type="submit">Жіберу</button>
+            </form>
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/darkchat.js"></script>
+    <script>
+          async function fetchHorses(query = '') {
+            const response = await fetch('https://67cd896b125cd5af75781365.mockapi.io/mock-api/products/abouthorse');
+            const data = await response.json();
+
+            const filteredHorses = data.filter(horse => 
+                horse.name.toLowerCase().includes(query.toLowerCase())
+            );
+
+            const container = document.getElementById('horseContainer');
+            container.innerHTML = '';
+
+            for (let i = 0; i < filteredHorses.length; i++) {
+                const horse = filteredHorses[i];
+                const card = document.createElement('div');
+                card.className = 'horse-card';
+                card.innerHTML = `
+                    <img src="${horse.images}" alt="">
+                    <h3>${horse.name}</h3>
+                    <p>Price: ${horse.price * 491} KZT</p>
+                `;
+                card.onclick = () => {
+                    window.location.href = `aftersearch.html?id=${horse.id}`;
+                };
+                container.appendChild(card);
+            }
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            fetchHorses(e.target.value);
+        });
+
+        fetchHorses();
+    </script>
+</body>
+</html>

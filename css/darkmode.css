@@ -1,0 +1,90 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .first-header {
+    background: rgb(0, 39, 0);
+    color: #ffffff;
+}
+
+.dark-mode .second-header {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+.dark-mode .main-container{
+    background-color: #121212;
+}
+.dark-mode .text-content p{
+    color: white;
+}
+.dark-mode #horseDetails{
+    background-color: #121212;
+}
+
+.dark-mode .cardevent{
+    background-color: #121212;
+}
+
+.dark-mode .cardevent h3,
+.dark-mode .logo h5,
+.dark-mode .nav a,
+.dark-mode .product-grid,
+.dark-mode .card h3 {
+    color: #ffffff;
+}
+
+.dark-mode .shop-now {
+    border-color: #ffffff;
+}
+
+.dark-mode_container img {
+    width: 40px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+    position: fixed;
+    left: 15px;
+    bottom: 15px; 
+}
+
+.dark-mode #results-container{
+    background-color: #121212;
+}
+.dark-mode_container img{
+    position: fixed;
+    left: -60px;
+    bottom: 15px;
+    animation: slideInLeft 1s forwards;
+}
+.dark-mode .about-content #sozder{
+    color: white;
+}
+.dark-mode .team-container {
+    background-color: #121212;
+    box-shadow: none;
+
+}
+.dark-mode .chat-body p{
+    color: black;
+}
+.dark-mode .team-container .team-member h3,
+.dark-mode .team-container .team-member p  {
+    color: #ffffff;
+}
+@keyframes slideInLeft {
+    from {
+        left: -60px;
+        opacity: 0;
+    }
+    to {
+        left: 15px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:768px){
+    .dark-mode .nav a{
+        color: black;
+    }
+}

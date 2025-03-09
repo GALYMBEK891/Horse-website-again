@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Breeds</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/horsebreed.css">
+    <link rel="stylesheet" href="./css/darkmode.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/chat.css">
+
+</head>
+<body>
+        
+    <div class="first-header">
+        <div>
+            <a href="#">
+                <img src="./logos/telegram_cloud_photo_size_4_5795060456526820895_w_removebg_preview.png" alt="" width="100px">
+            </a>
+            
+        </div>
+        <img src="./images/image.avif" alt="" width="90px">
+        <div class="time-info">
+            <div>YOUR TIME</div>
+        <div class="your-time" id="your-time"></div>
+        </div>
+    </div>
+
+    <div class="second-header">
+        
+            <a href="./index.html" class="logo">
+                <img id="logo" src="./logos/at.png" alt="">
+                <h5>Kulager</h3>
+            </a>
+
+
+            <nav class="nav">
+                <a href="./about.html">Біз туралы</a>
+                <a href="./events.html">Eventтер</a>
+                <a href="./horsebreed.html">Ат Тұқымдары</a>
+                <a href="./results.html">Нәтижелер</a>
+                <a href="./search.html">Іздеу </a>
+            </nav>
+            
+
+
+        <div class="burger" id="burger">
+            <img id="burgerimage" src="./icons/text.png" alt="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container_content">
+            <div class="content" id="content">
+                <img src="https://media.istockphoto.com/id/1427594977/photo/arabian-horse-beautiful-arabian-horse.jpg?s=612x612&w=0&k=20&c=26NsTNFKa7thTlXzVEtsN3O-E1ln0jQcTTp2LJuoaAw=" id="horseImage" alt="Horse Image">
+                <div class="details" id="horseDetails">
+                    <h2>Араб арғымағы</h2>
+                    <p><b>Шығу тегі:</b> Араб түбегі</p>
+                    <p><b>Ерекшеліктері:</b> Төзімді, тез жүгіретін</p>
+                    <p><b>Үздік қолдану саласы:</b> Жарыс, ұзақ сапарлар</p>
+                </div>
+
+            </div>
+            <div style="display: flex; flex-direction: column; ">
+                 <div class="sidebar" id="sidebar"></div>
+                <button id="showAllBtn" >Барлығын көрсету</button>
+            </div>
+           
+        </div>
+        
+
+          <!-- footer -->
+            <footer class="footer">
+                <div class="footer-content">
+
+                    <a href="./index.html">
+                        <img id="logo" src="./logos/at s.png" alt="" width="100">
+                    </a>
+                    
+                </div>
+                <div class="footer-content">
+
+                    <h3>Сілтемелер</h3>
+
+                    <a href="./index.html">Басты бет</a>
+                    <a href="./about.html">Біз туралы</a>
+                    <a href="./events.html">Eventтер</a>
+                    <a href="./search.html">Іздеу</a>
+     
+                </div>
+ 
+                <div class="footer-content">
+
+                    <h3>Байланыс</h3>
+                    <p>Kazakhstan <br>
+                    Zhambyl obl.<br>
+                    Taraz, <br>
+                    Call: 8-776-195-8045<br>
+
+                    <a href="mailto:galymbekmuratbai@gmail.com">galymbekmuratbai@gmail.com</a></p>
+
+                    <div class="social-icons">
+                        <a href="https://wa.me/7761958045">
+                            <img src="./icons/whatsapp.png" alt="WhatsApp">
+                        </a>
+                        
+                        <a href="https://www.instagram.com/galymbekmuratbai/">
+                            <img src="./icons/instagram (1).png" alt="Instagram">
+                        </a>
+                        
+                        <a href="https://www.youtube.com/@GalymbekMuratbai">
+                            <img src="./icons/youtube.png" alt="YouTube">
+                        </a>
+                        
+                    </div>
+                </div>
+            </footer>
+            <!-- bitti -->
+    </div>
+
+            <!-- dark ko -->
+            <div class="dark-mode_container">
+                <img id="darkmode" src="./icons/night-mode.png" alt="">
+            </div>
+            <!-- chat ko -->
+            <div class="chat-icon" id="chat-icon">
+                <img id="chatimg" src="./icons/chat.png" alt="Chat">
+            </div>
+            
+            <div class="ashyluganchat" id="ashyluganchat">
+                <div class="chat-header">
+                    <img id="logo" src="./logos/at.png" alt="">
+                    <h3>Kulager Team</h3>
+                    
+                </div>
+            
+                <div class="chat-body">
+                    <p>Хабарлама жіберіңіз. Біз сізге мүмкіндігінше тез жауап береміз!</p>
+    
+                
+                    <form id="forma">
+                        <input type="text" placeholder="Атыңыз" name="name" required>
+                        <input type="tel" placeholder="Телефон нөміріңіз" name="number" required>
+                        <textarea placeholder="Хабарламаңызды енгізіңіз..." name="message" required></textarea>
+                        <button type="submit">Жіберу</button>
+                    </form>
+                </div>
+    
+               
+              
+           
+                
+            </div>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/horsebreed.js"></script>
+    <script src="./js/darkchat.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+</html>

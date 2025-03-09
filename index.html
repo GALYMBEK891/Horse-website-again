@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equestrian Website</title>
+    <link rel="stylesheet" href="./css/darkmode.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css"> 
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+</head>
+<body>
+
+    
+    <div class="first-header">
+        <div>
+            <a href="#">
+                <img src="./logos/telegram_cloud_photo_size_4_5795060456526820895_w_removebg_preview.png" alt="" width="100px">
+            </a>
+            
+        </div>
+        <img src="./images/image.avif" alt="" width="90px">
+        <div class="time-info">
+            <div>YOUR TIME</div>
+        <div class="your-time" id="your-time"></div>
+        </div>
+    </div>
+
+    <div class="second-header">
+        
+            <a href="./index.html" class="logo">
+                <img id="logo" src="./logos/at.png" alt="">
+                <h5>Kulager</h3>
+            </a>
+
+
+            <nav class="nav">
+                <a href="./about.html">Біз туралы</a>
+                <a href="./events.html">Eventтер</a>
+                <a href="./horsebreed.html">Ат Тұқымдары</a>
+                <a href="./results.html">Нәтижелер</a>
+                <a href="./search.html">Іздеу</a>
+            </nav>
+            
+
+
+        <div class="burger" id="burger">
+            <img id="burgerimage" src="./icons/text.png" alt="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="main-container">
+
+        
+
+            <div class="image-wrapper">
+
+                <div class="main-container_ofimages">
+                    <img id="mainImage" src="./images/home-protecting-horse-welfare.jpg" class="main-image" style="filter: brightness(0.6);">
+                    <div id="caption" class="image-caption">
+                        <h2>АТ СПОРТЫН БАРШАҒА ҚОЛЖЕТІМДІ ЕТУ</h2>
+                        <p>Біз ат спорты саласындағы жетекші ұйым ретінде атпен серуендеуді баршаға қолжетімді және қызықты етуге міндеттенеміз.</p>
+                    </div>
+                </div>
+                
+                
+            
+                <div class="image-thumbs">
+                    <div class="thumb-container" onmouseover="changeImage(this, 'home-protecting-horse-welfare.jpg', 'АТ СПОРТЫН БАРШАҒА ҚОЛЖЕТІМДІ ЕТУ', 'Біз ат спорты саласындағы жетекші ұйым ретінде атпен серуендеуді баршаға қолжетімді және қызықты етуге міндеттенеміз.')">
+                        <img src="./images/home-protecting-horse-welfare.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>АТ СПОРТЫН БАРШАҒА ҚОЛЖЕТІМДІ ЕТУ</h3>
+                            <p>Біз ат спорты саласындағы жетекші ұйым ретінде атпен серуендеуді баршаға қолжетімді және қызықты етуге міндеттенеміз.</p>
+                        </div>
+                    </div>
+                    
+            
+                    <div class="thumb-container" onmouseover="changeImage(this, 'homepage-hero-1440X724.jpg', 'АТТАРДЫҢ ӘЛ-АУҚАТЫН ҚОРҒАУ', 'Біз ат спорты саласында аттардың денсаулығы мен әл-ауқатын қорғау үшін ең жоғары қамқорлық стандарттарын қамтамасыз етеміз.')">
+                        <img src="./images/homepage-hero-1440X724.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>АТТАРДЫҢ ӘЛ-АУҚАТЫН ҚОРҒАУ</h3>
+                            <p>Біз ат спорты саласында аттардың денсаулығы мен әл-ауқатын қорғау үшін ең жоғары қамқорлық стандарттарын қамтамасыз етеміз.</p>
+                        </div>
+                    </div>
+                    
+            
+                    <div class="thumb-container" onmouseover="changeImage(this, 'horse-welfare-hero.png', '3 ОЛИМПИАДАЛЫҚ СПОРТ ТҮРІ', 'Ат спортына дрессура, кедергілерден өту және үшсайыс кіреді, бұл ғаламдық деңгейде қызықты жарыстар ұсынады.')">
+                        <img src="./images/horse-welfare-hero.png" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>3 ОЛИМПИАДАЛЫҚ СПОРТ ТҮРІ</h3>
+                            <p>Ат спортына дрессура, кедергілерден өту және үшсайыс кіреді, бұл ғаламдық деңгейде қызықты жарыстар ұсынады.</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="thumb-container" onmouseover="changeImage(this, 'at 3.jpg', 'ДАҢҚ ЖОЛЫ', 'Элиталық шабандоздар мен олардың аттарының беделді атақтар үшін жарысу жолын бақылаңыз.')">
+                        <img src="./images/at 3.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>ДАҢҚ ЖОЛЫ</h3>
+                            <p>Элиталық шабандоздар мен олардың аттарының беделді атақтар үшін жарысу жолын бақылаңыз.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="thumb-container" onmouseover="changeImage(this, 'kokpar 1.jpg', 'ЧЕМПИОН СЕКІЛДІ ЖАТТЫҒЫҢЫЗ', 'Барлық деңгейлерге арналған кәсіби жаттықтырушылар мен жоғары деңгейдегі дайындық бағдарламалары арқылы дағдыларыңызды шыңдаңыз.')">
+                        <img src="./images/kokpar 1.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>ЧЕМПИОН СЕКІЛДІ ЖАТТЫҒЫҢЫЗ</h3>
+                            <p>Барлық деңгейлерге арналған кәсіби жаттықтырушылар мен жоғары деңгейдегі дайындық бағдарламалары арқылы дағдыларыңызды шыңдаңыз.</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="thumb-container" onmouseover="changeImage(this, 'owunshyk at 6.avif', 'АТ СПОРТЫ ФЕСТИВАЛЬДЕРІ ЖӘНЕ ШАРАЛАРЫ', 'Әлемдегі қызықты ат шоулары, көрмелер мен мәдени ат спорты шараларын ашыңыз.')">
+                        <img src="./images/owunshyk at 6.avif" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>АТ СПОРТЫ ФЕСТИВАЛЬДЕРІ ЖӘНЕ ШАРАЛАРЫ</h3>
+                            <p>Әлемдегі қызықты ат шоулары, көрмелер мен мәдени ат спорты шараларын ашыңыз.</p>
+                        </div>
+                    </div>
+                    
+
+                
+                    
+                    <div class="thumb-container" onmouseover="changeImage(this, 'kokpar 2.jpeg', 'КӨКПАР – ДАЛА РУХЫ', 'Көкпардың қызығын сезініңіз — бұл күштілік, стратегия және шабандоздық өнерін көрсететін дәстүрлі көшпенділердің ат ойыны.')">
+                        <img src="./images/kokpar 2.jpeg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>КӨКПАР – ДАЛА РУХЫ</h3>
+                            <p>Көкпардың қызығын сезініңіз — бұл күштілік, стратегия және шабандоздық өнерін көрсететін дәстүрлі көшпенділердің ат ойыны.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="thumb-container" onmouseover="changeImage(this, 'kokpar 4.jpg', 'КӨКПАР – АТ ҮСТІНДЕГІ ШАЙҚАС', 'Көкпардың қызуын сезініңіз — бұл дәстүрлі көшпенділер ойыны, онда шабандоздар серкені жеңіс шеңберіне жеткізу үшін қызу тартысқа түседі.')">
+                        <img src="./images/kokpar 4.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>КӨКПАР – АТ ҮСТІНДЕГІ ШАЙҚАС</h3>
+                            <p>Көкпардың қызуын сезініңіз — бұл дәстүрлі көшпенділер ойыны, онда шабандоздар серкені жеңіс шеңберіне жеткізу үшін қызу тартысқа түседі.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="thumb-container" onmouseover="changeImage(this, 'kokpar 5.jpg', 'КӨКПАРҒА ДАЙЫНДЫҚ', 'Көкпар өнерін меңгеріп, маңызды ат үстіндегі дағдыларды, күш техникаларын және үздік ойыншылар қолданатын стратегияларды үйреніңіз.')">
+                        <img src="./images/kokpar 5.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>КӨКПАРҒА ДАЙЫНДЫҚ</h3>
+                            <p>Көкпар өнерін меңгеріп, маңызды ат үстіндегі дағдыларды, күш техникаларын және үздік ойыншылар қолданатын стратегияларды үйреніңіз.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="thumb-container" onmouseover="changeImage(this, 'kokpar 7.jpg', 'КӨКПАР – ДАЛА МҰРАСЫ', 'Көкпардың терең мәдени тамырларын ашыңыз – бұл ойын күштілікті, командалық рухты және көшпенді жауынгерлердің рухын бейнелейді.')">
+                        <img src="./images/kokpar 7.jpg" class="thumb" style="filter: brightness(0.6);">
+                        <div class="thumb-caption">
+                            <h3>КӨКПАР – ДАЛА МҰРАСЫ</h3>
+                            <p>Көкпардың терең мәдени тамырларын ашыңыз – бұл ойын күштілікті, командалық рухты және көшпенді жауынгерлердің рухын бейнелейді.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+        
+            <div class="what-we-do">
+                <div class="text-content">
+                    <h2>Біз туралы</h2>
+                    <p>
+                        Біздің платформа – Қазақстандағы ат жарыстары мен ат спорты іс-шараларының басты орталығы.  
+                        Біз шабандоздар, жаттықтырушылар және ат спорты жанкүйерлерін ұлттық және халықаралық турнирлерге қатысуға біріктіреміз.  
+                        Сіз кәсіби спортшы болсаңыз да, немесе жай ғана қызығушылық танытатын жанкүйер болсаңыз да, біз сізге соңғы іс-шаралар кестесін, жарыс нәтижелерін және ат спорты әлеміндегі эксклюзивті жаңалықтарды ұсынамыз.  
+                        Қазақстанның ат спорты қауымдастығында спорттық рух пен шеберлікті дәріптеуге бізбен бірге атсалысыңыз.
+                    </p>
+                    <a href="./about.html" class="more-btn">КӨБІРЕК АҚПАРАТ</a>
+                </div>
+                
+                <div class="video-content">
+                    <iframe id="videoFrame" width="560" height="315" 
+                    src="https://www.youtube.com/embed/MrU7h1vZspI?si=kQWs_rf0Lq8JIaJT" 
+                    title="YouTube video player" frameborder="0" allowfullscreen 
+                    allow="autoplay; encrypted-media">
+                </iframe>
+                </div>
+            </div>
+        
+
+
+            <div class="store-container">
+                <h2 style="color: white;">РЕСМИ ДҮКЕН</h2>
+                <div id="product-list" class="product-grid"></div>
+                <a class="shop-now" href="https://vcffff.github.io/jameco-store/">SHOP NOW</a>
+                
+            </div>
+
+            <div class="events-container">
+                <h2>Іс-шаралар мен жарыстар</h2>
+                <p>осы аптада өтеді</p>
+                <div class="events-list" id="events-list">
+                    
+                </div>
+                <a href="./events.html">
+                    <button class="see-more">Көбірек іс-шараларды қарау</button>
+                </a>
+                
+
+            </div>
+            
+
+
+
+            <h1>Біздің серіктестеріміз</h1>
+
+            <div class="partners-container">
+               <a href="#">
+                <div class="partner-logo"><img src="./logos/telegram_cloud_photo_size_4_5795060456526820895_w_removebg_preview.png" alt=""></div>
+               </a> 
+               <a href="https://vcffff.github.io/jameco-store/">
+                <div class="partner-logo"><img id="logojameco" src="./logos/JAMECO STORE.png" alt=""></div>
+               </a>
+               <a href="#">
+                <div class="partner-logo"><img src="./logos/Naruto_logo.svg.png" alt=""></div>
+               </a>
+                
+                
+            </div>
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer-content">
+
+                    <a href="./index.html">
+                        <img id="logo" src="./logos/at s.png" alt="" width="100">
+                    </a>
+                    
+                </div>
+                <div class="footer-content">
+
+                    <h3>Сілтемелер</h3>
+
+                    <a href="./index.html">Басты бет</a>
+                    <a href="./about.html">Біз туралы</a>
+                    <a href="./events.html">Eventтер</a>
+                    <a href="./search.html">Іздеу</a>
+                </div>
+ 
+                <div class="footer-content">
+
+                    <h3>Байланыс</h3>
+                    <p>Kazakhstan <br>
+                    Zhambyl obl.<br>
+                    Taraz, <br>
+                    Call: 8-776-195-8045<br>
+
+                    <a href="mailto:galymbekmuratbai@gmail.com">galymbekmuratbai@gmail.com</a></p>
+
+                    <div class="social-icons">
+                        
+                        <a href="https://wa.me/7761958045">
+                            <img src="./icons/whatsapp.png" alt="WhatsApp">
+                        </a>
+                        
+                        <a href="https://www.instagram.com/galymbekmuratbai/">
+                            <img src="./icons/instagram (1).png" alt="Instagram">
+                        </a>
+                        
+                        <a href="https://www.youtube.com/@GalymbekMuratbai">
+                            <img src="./icons/youtube.png" alt="YouTube">
+                        </a>
+                        
+                    </div>
+                </div>
+            </footer>
+            <!-- bitti -->
+        </div>
+        
+        <!-- dark ko -->
+        <div class="dark-mode_container">
+            <img id="darkmode" src="./icons/night-mode.png" alt="">
+        </div>
+        <!-- chat ko -->
+        <div class="chat-icon" id="chat-icon">
+            <img id="chatimg" src="./icons/chat.png" alt="">
+        </div>
+        
+        <div class="ashyluganchat" id="ashyluganchat">
+            <div class="chat-header">
+                <img id="logo" src="./logos/at.png" alt="">
+                <h3>Kulager Team</h3>
+                
+            </div>
+        
+            <div class="chat-body">
+                <p>Хабарлама жіберіңіз. Біз сізге мүмкіндігінше тез жауап береміз!</p>
+
+            
+                <form id="forma">
+                    <input type="text" placeholder="Атыңыз" name="name" required>
+                    <input type="tel" placeholder="Телефон нөміріңіз" name="number" required>
+                    <textarea placeholder="Хабарламаңызды енгізіңіз..." name="message" required></textarea>
+                    <button type="submit">Жіберу</button>
+                </form>
+            </div>
+
+
+        </div>
+        
+        
+    <script src="./js/script.js"></script>
+    <script src="./js/darkchat.js"></script>   
+    <script src="./js/animation.js"></script>
+</body>
+</html>

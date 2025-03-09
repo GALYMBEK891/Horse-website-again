@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse </title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .details-card {
+            background: #1E1E1E;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .details-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 2px solid #FFD700;
+        }
+        .details-card h3 {
+            margin: 15px 0;
+        }
+        .details-card p {
+            color: #FFD700;
+        }
+        .buy-button {
+            background-color: #FFD700;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="details-card" id="horseDetails"></div>
+
+    <script>
+        async function loadHorseDetails() {
+            const params = new URLSearchParams(window.location.search)
+            const horseId = params.get('id')
+
+            const res = await fetch('https://67cd896b125cd5af75781365.mockapi.io/mock-api/products/abouthorse')
+            const data = await res.json()
+
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].id === horseId) {
+                    document.getElementById('horseDetails').innerHTML = `
+                        <img src="${data[i].images}" alt="">
+                        <h3>${data[i].name}</h3>
+                        <p>Price: ${data[i].price * 491} KZT</p>
+                        <button class="buy-button" onclick="buyHorse('${data[i].name}', '${data[i].price * 491}')">Buy</button>
+                    `
+                }
+            }
+        }
+
+        function buyHorse(name, price) {
+            const message = `Мен ${price} KZT-ға ${name} сатып алғым келеді.`
+            window.location.href = `https://wa.me/7761958045?text=${encodeURIComponent(message)}`
+        }
+
+        loadHorseDetails()
+    </script>
+</body>
+</html>

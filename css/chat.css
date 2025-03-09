@@ -1,0 +1,85 @@
+
+.chat-icon img {
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.ashyluganchat {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.chat-header {
+    background: #4A4A4A;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chat-header img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.chat-body {
+    padding: 20px;
+    
+}
+.chat-body p{
+    margin-bottom: 10px;
+}
+
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4A4A4A;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #6A6A6A;
+}
+.chat-icon img{
+
+    right: -60px;
+    bottom: 15px;
+    animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        right: -60px;
+        opacity: 0;
+    }
+    to {
+        right: 15px;
+        opacity: 1;
+    }
+}

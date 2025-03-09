@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kazakh&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans Kazakh', sans-serif;
+    background-color: #f4f4f4;
+}
+.main-container {
+    max-width: 1600px;
+    margin: 240px auto 0;
+    background: white;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    transition: top 4s;
+}
+.container_content{
+    display: flex;
+    gap: 30px;
+
+}
+.content{
+    flex-basis: 70%;
+    padding: 20px;
+}
+.content img {
+    width: 100%;
+    border-radius: 10px;
+}
+.content .details {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+.sidebar{  
+    margin-top: 30px;
+}
+.sidebar .item {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+#horseDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#showAllBtn{
+    display: none;
+    padding: 10px 20px;
+    background-color: #e4002b;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: none;
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .container_content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-left: 30px;
+    }
+
+    .sidebar .item {
+        flex-direction: column;
+        min-width: 120px;
+    }
+    
+    .sidebar img {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        margin: 220px auto 0;
+        padding: 15px;
+    }
+
+    .content .details {
+        padding: 15px;
+    }
+
+    #horseDetails {
+        gap: 10px;
+    }
+
+    #showAllBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        margin: 120px auto 0;
+        padding: 10px;
+    }
+
+    .sidebar .item {
+        min-width: 100px;
+    }
+
+    .sidebar img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #showAllBtn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

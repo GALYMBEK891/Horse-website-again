@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horse Competition Results</title>
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/darkmode.css">
+    <link rel="stylesheet" href="./css/results.css">
+
+</head>
+
+<body>
+
+    <div class="first-header">
+        <div>
+            <a href="#">
+                <img src="./logos/telegram_cloud_photo_size_4_5795060456526820895_w_removebg_preview.png" alt="" width="100px">
+            </a>
+            
+        </div>
+        <img src="./images/image.avif" alt="" width="90px">
+        <div class="time-info">
+            <div>YOUR TIME</div>
+        <div class="your-time" id="your-time"></div>
+        </div>
+    </div>
+
+    <div class="second-header">
+        
+            <a href="./index.html" class="logo">
+                <img id="logo" src="./logos/at.png" alt="">
+                <h5>Kulager</h3>
+            </a>
+
+
+            <nav class="nav">
+                <a href="./about.html">Біз туралы</a>
+                <a href="./events.html">Eventтер</a>
+                <a href="./horsebreed.html">Ат Тұқымдары</a>
+                <a href="./results.html">Нәтижелер</a>
+                <a href="./search.html">Іздеу</a>
+            </nav>
+            
+
+
+        <div class="burger" id="burger">
+            <img id="burgerimage" src="./icons/text.png" alt="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="main-container">
+
+        <h1>Жылқы жарысының нәтижелері</h1>
+        <div class="year-buttons">
+            <button onclick="showResults('2024')">2024</button>
+            <button onclick="showResults('2025')">2025</button>
+        </div>
+
+        <div id="results-container"></div>
+
+
+         <!-- footer -->
+         <footer class="footer">
+            <div class="footer-content">
+
+                <a href="./index.html">
+                    <img id="logo" src="./logos/at s.png" alt="" width="100">
+                </a>
+                
+            </div>
+            <div class="footer-content">
+
+                <h3>Сілтемелер</h3>
+
+                <a href="./index.html">Басты бет</a>
+                <a href="./about.html">Біз туралы</a>
+                <a href="./events.html">Eventтер</a>
+                <a href="./search.html">Іздеу</a>
+            </div>
+
+            <div class="footer-content">
+
+                <h3>Байланыс</h3>
+                <p>Kazakhstan <br>
+                Zhambyl obl.<br>
+                Taraz, <br>
+                Call: 8-776-195-8045<br>
+
+                <a href="mailto:galymbekmuratbai@gmail.com">galymbekmuratbai@gmail.com</a></p>
+
+                <div class="social-icons">
+                    
+                    <a href="https://wa.me/7761958045">
+                        <img src="./icons/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    
+                    <a href="https://www.instagram.com/galymbekmuratbai/">
+                        <img src="./icons/instagram (1).png" alt="Instagram">
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@GalymbekMuratbai">
+                        <img src="./icons/youtube.png" alt="YouTube">
+                    </a>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+         <!-- dark ko -->
+         <div class="dark-mode_container">
+            <img id="darkmode" src="./icons/night-mode.png" alt="">
+        </div>
+        <!-- chat ko -->
+        <div class="chat-icon" id="chat-icon">
+            <img id="chatimg" src="./icons/chat.png" alt="">
+        </div>
+        
+        <div class="ashyluganchat" id="ashyluganchat">
+            <div class="chat-header">
+                <img id="logo" src="./logos/at.png" alt="">
+                <h3>Kulager Team</h3>
+                
+            </div>
+        
+            <div class="chat-body">
+                <p>Хабарлама жіберіңіз. Біз сізге мүмкіндігінше тез жауап береміз!</p>
+    
+            
+                <form id="forma">
+                    <input type="text" placeholder="Атыңыз" name="name" required>
+                    <input type="tel" placeholder="Телефон нөміріңіз" name="number" required>
+                    <textarea placeholder="Хабарламаңызды енгізіңіз..." name="message" required></textarea>
+                    <button type="submit">Жіберу</button>
+                </form>
+            </div>
+    
+    
+        </div>
+
+        <script src="./js/results.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/darkchat.js"></script>
+        <script src="./js/animation.js"></script>
+</body>
+</html>

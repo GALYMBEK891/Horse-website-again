@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kazakh&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans Kazakh', sans-serif;
+    background-color: #f4f4f4;
+}
+.main-container {
+    max-width: 1600px;
+    margin: 220px auto 0;
+    background: white;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    transition: top 4s;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-section.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+.about-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    max-width: 1000px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.birgeturat {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #5d6d7e;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.link {
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+/* download pdf */
+.download-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.document {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.download-button img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+/* about memebrs */
+
+.team-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.team-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member {
+    position: relative;
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+}
+
+.team-member .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.team-member.ustinde .basynda {
+    opacity: 0;
+}
+
+.team-member.ustinde .hover-img {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .team-container{
+        flex-direction: column;
+    }
+    .document{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+}
+
+/* fag */
+
+.faq-container {
+    width: 100%;
+    max-width: 900px;
+    
+    
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    font-size: 19px;
+    color: #0056b3;
+    position: relative;
+}
+
+.faq-question::before {
+    content: "▾";
+    margin-right: 8px;
+    transition: transform 1s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0 0 20px;
+    color: #333;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::before {
+    transform: rotate(180deg);
+}
